@@ -7,6 +7,7 @@ import webImage from './assets/images/about/01.png';
 import iosAndroidImage from './assets/images/about/02.png';
 import marketingImage from './assets/images/about/03.png';
 import {Home} from "./components/Home/Home";
+import {Navbar} from "./components/Navbar/Navbar";
 
 export const App = () => {
     return (
@@ -14,14 +15,7 @@ export const App = () => {
 
             <Home />
 
-            <aside className="navbar">
-                <ul className="navbar__list">
-                    <li>home</li>
-                    <li>about us</li>
-                    <li>portfolio</li>
-                    <li>contact</li>
-                </ul>
-            </aside>
+            <Navbar />
 
             <section className="about">
                 <div className="about__title title">
