@@ -12,6 +12,7 @@ import {About} from "./components/AboutUs/About";
 import {Portfolio} from "./components/Portfolio/Portfolio";
 import {Partners} from "./components/Partners/Partners";
 import {Contact} from "./components/Contact/Contact";
+import {Footer} from "./components/Footer/Footer";
 
 export const App = () => {
     return (
@@ -29,24 +30,8 @@ export const App = () => {
 
             <Contact />
 
-            <footer className="footer">
-                <div className="footer__logo">
-                    <img src={logo} alt="site logo"/>
-                </div>
+            <Footer />
 
-                <div className="footer__menu">
-                    <ul className="footer__list">
-                        <li>Home</li>
-                        <li>Facebook</li>
-                        <li>Linkedin</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-
-                <div className="footer__copy">
-                    © 2021. All Rights Reserved
-                </div>
-            </footer>
         </div>
     );
 }
