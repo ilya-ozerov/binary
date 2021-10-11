@@ -2,37 +2,17 @@ import React from 'react';
 import './App.scss';
 
 import logo from './assets/images/main/Layer 33 copy 2@1X.png';
-import bg from './assets/images/main/BG-Header@1X.jpeg';
 
 import webImage from './assets/images/about/01.png';
 import iosAndroidImage from './assets/images/about/02.png';
 import marketingImage from './assets/images/about/03.png';
+import {Home} from "./components/Home/Home";
 
 export const App = () => {
     return (
         <div className="wrapper">
-            <section className="home">
 
-                <img src={bg} className="home__background"/>
-
-                <div className="home__content">
-                    <div className="home__logo">
-                        <img src={logo} alt="site logo"/>
-                    </div>
-
-                    <div className="home__title title">
-                        <h1>Clear, smart, attractive design</h1>
-                        <h2>for your app, logo, website</h2>
-                    </div>
-
-                    <div className="home__button button">
-                        <button>
-                            READ MORE
-                        </button>
-                    </div>
-                </div>
-
-            </section>
+            <Home />
 
             <aside className="navbar">
                 <ul className="navbar__list">

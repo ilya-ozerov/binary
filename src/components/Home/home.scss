@@ -1,0 +1,87 @@
+.home {
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  //background-color: antiquewhite;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //height: 100%;
+
+    //background-color: blue;
+  }
+
+  &__logo {
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+
+    //background-color: aqua;
+    height: 100%;
+  }
+  &__title {
+    flex: 0 0 auto;
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    //background-color: blue;
+    h2 {
+      display: block;
+      font-size: 20px;
+      text-transform: lowercase;
+      margin: 10px 0px 0px 0px;
+      &:after {
+        background-color: white;
+      }
+    }
+
+  }
+  &__button {
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background-color: antiquewhite;
+
+    button {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -75px;
+        left: 50%;
+        width: 17px;
+        height: 10px;
+        background: url("../../assets/images/main/Arrow-down.svg") center no-repeat;
+        margin: 0px 0px 0px -8.5px;
+      }
+    }
+
+  }
+}
