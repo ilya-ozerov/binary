@@ -1,0 +1,60 @@
+.portfolio {
+
+  background-color: #F3F3F3;
+
+  padding: 40px;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__selector {
+    display: flex;
+    //background-color: antiquewhite;
+
+    margin-bottom: 130px;
+
+    li {
+      margin-right: 50px;
+      text-transform: uppercase;
+      font-size: 15px;
+
+      &:hover {
+        color: #ADA074;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 539px);
+    gap: 26px;
+
+    margin-bottom: 60px;
+  }
+  &__item {
+    width: 539px;
+    height: 366px;
+    background-color: #EAEAEA;
+  }
+  &__image {}
+
+  &__button {
+    button {
+      text-transform: uppercase;
+      border-color: black;
+      color: black;
+    }
+  }
+}
