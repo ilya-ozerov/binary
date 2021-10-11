@@ -10,6 +10,7 @@ import {Home} from "./components/Home/Home";
 import {Navbar} from "./components/Navbar/Navbar";
 import {About} from "./components/AboutUs/About";
 import {Portfolio} from "./components/Portfolio/Portfolio";
+import {Partners} from "./components/Partners/Partners";
 
 export const App = () => {
     return (
@@ -23,18 +24,7 @@ export const App = () => {
 
             <Portfolio />
 
-            <section className="partners">
-                <div className="partners__title">
-                    <h2>Our Partners</h2>
-                </div>
-                <div className="partners__row">
-                    <div className="partners__item">
-                        <div className="partners__image">
-                            <img src="#" alt="partners item"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Partners />
 
             <section className="contact">
                 <div className="contact__title title">
