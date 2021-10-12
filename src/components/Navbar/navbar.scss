@@ -10,10 +10,16 @@
   border-bottom: 2px solid #F2F2F2;
   background-color: white;
 
+
+
   &__list {
     display: flex;
     font-size: 15px;
     text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      //display: none;
+    }
 
     li {
       margin-right: 60px;

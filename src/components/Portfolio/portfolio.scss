@@ -11,6 +11,14 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1024px) {
+    padding: 70px 20px 20px 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 70px 10px 10px 10px;
+  }
+
   &__title {
     margin-bottom: 50px;
   }
@@ -44,11 +52,29 @@
     gap: 26px;
 
     margin-bottom: 60px;
+
+    justify-items: center;
+
+    @media (max-width: 1024px) {
+      gap: 10px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template: none;
+      grid-auto-flow: row;
+      width: 100%;
+    }
+
   }
   &__item {
     width: 539px;
     height: 366px;
     background-color: #EAEAEA;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
   }
   &__image {}
 
