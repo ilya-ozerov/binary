@@ -6,9 +6,13 @@ import bg from '../../assets/images/main/BG-Header@1X.jpeg';
 
 type HomeProps = {
     homeRef: React.RefObject<HTMLDivElement>;
+    aboutRef: React.RefObject<HTMLDivElement>;
 }
 
-export const Home: React.FC<HomeProps> = ({homeRef}) => {
+export const Home: React.FC<HomeProps> = ({homeRef, aboutRef}) => {
+
+    const onClick = () => {aboutRef.current?.scrollIntoView({behavior: "smooth"})}
+
     return (
         <section ref={homeRef} className="home">
 
@@ -25,7 +29,7 @@ export const Home: React.FC<HomeProps> = ({homeRef}) => {
                 </div>
 
                 <div className="home__button button">
-                    <button>
+                    <button onClick={onClick}>
                         READ MORE
                     </button>
                 </div>

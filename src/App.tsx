@@ -1,11 +1,6 @@
 import React, {useRef} from 'react';
 import './App.scss';
 
-import logo from './assets/images/main/Layer 33 copy 2@1X.png';
-
-import webImage from './assets/images/about/01.png';
-import iosAndroidImage from './assets/images/about/02.png';
-import marketingImage from './assets/images/about/03.png';
 import {Home} from "./components/Home/Home";
 import {Navbar} from "./components/Navbar/Navbar";
 import {About} from "./components/AboutUs/About";
@@ -24,7 +19,7 @@ export const App = () => {
     return (
         <div className="wrapper">
 
-            <Home homeRef={homeRef} />
+            <Home homeRef={homeRef} aboutRef={aboutRef} />
 
             <Navbar contactRef={contactRef} homeRef={homeRef}
                     portfolioRef={portfolioRef} aboutRef={aboutRef} />
