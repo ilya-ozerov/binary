@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/binary/static/css/main.8cb931f4.chunk.css",
-    "main.js": "/binary/static/js/main.b4c8308c.chunk.js",
-    "main.js.map": "/binary/static/js/main.b4c8308c.chunk.js.map",
-    "runtime-main.js": "/binary/static/js/runtime-main.18f58763.js",
-    "runtime-main.js.map": "/binary/static/js/runtime-main.18f58763.js.map",
-    "static/js/2.1258216c.chunk.js": "/binary/static/js/2.1258216c.chunk.js",
-    "static/js/2.1258216c.chunk.js.map": "/binary/static/js/2.1258216c.chunk.js.map",
-    "static/js/3.f46e5fdb.chunk.js": "/binary/static/js/3.f46e5fdb.chunk.js",
-    "static/js/3.f46e5fdb.chunk.js.map": "/binary/static/js/3.f46e5fdb.chunk.js.map",
+    "main.css": "/binary/static/css/main.9b117938.chunk.css",
+    "main.js": "/binary/static/js/main.a4a180be.chunk.js",
+    "main.js.map": "/binary/static/js/main.a4a180be.chunk.js.map",
+    "runtime-main.js": "/binary/static/js/runtime-main.f88d37a7.js",
+    "runtime-main.js.map": "/binary/static/js/runtime-main.f88d37a7.js.map",
+    "static/css/2.a95be28f.chunk.css": "/binary/static/css/2.a95be28f.chunk.css",
+    "static/js/2.2a70cf88.chunk.js": "/binary/static/js/2.2a70cf88.chunk.js",
+    "static/js/2.2a70cf88.chunk.js.map": "/binary/static/js/2.2a70cf88.chunk.js.map",
+    "static/js/3.833d659a.chunk.js": "/binary/static/js/3.833d659a.chunk.js",
+    "static/js/3.833d659a.chunk.js.map": "/binary/static/js/3.833d659a.chunk.js.map",
     "index.html": "/binary/index.html",
-    "static/css/main.8cb931f4.chunk.css.map": "/binary/static/css/main.8cb931f4.chunk.css.map",
-    "static/js/2.1258216c.chunk.js.LICENSE.txt": "/binary/static/js/2.1258216c.chunk.js.LICENSE.txt",
+    "static/css/2.a95be28f.chunk.css.map": "/binary/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.9b117938.chunk.css.map": "/binary/static/css/main.9b117938.chunk.css.map",
+    "static/js/2.2a70cf88.chunk.js.LICENSE.txt": "/binary/static/js/2.2a70cf88.chunk.js.LICENSE.txt",
     "static/media/home.scss": "/binary/static/media/Arrow-down.307890a9.svg",
     "static/media/BG-Header@1X.bf099248.jpeg": "/binary/static/media/BG-Header@1X.bf099248.jpeg",
     "static/media/bg-partners.e005383a.png": "/binary/static/media/bg-partners.e005383a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.18f58763.js",
-    "static/js/2.1258216c.chunk.js",
-    "static/css/main.8cb931f4.chunk.css",
-    "static/js/main.b4c8308c.chunk.js"
+    "static/js/runtime-main.f88d37a7.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.2a70cf88.chunk.js",
+    "static/css/main.9b117938.chunk.css",
+    "static/js/main.a4a180be.chunk.js"
   ]
 }
