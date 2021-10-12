@@ -32,7 +32,7 @@ export const App = () => {
 
             <Contact contactRef={contactRef} />
 
-            <Footer />
+            <Footer homeRef={homeRef} contactRef={contactRef}/>
 
         </div>
     );
