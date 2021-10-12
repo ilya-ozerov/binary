@@ -61,6 +61,10 @@
     }
   }
 
+  &__active {
+    color: #ADA074;
+  }
+
   &__gallery {
     display: grid;
     grid-template-columns: repeat(2, 540px);
@@ -93,7 +97,16 @@
     }
 
   }
-  &__image {}
+  &__image {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &__button {
     button {
