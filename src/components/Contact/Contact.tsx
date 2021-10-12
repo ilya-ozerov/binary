@@ -1,9 +1,13 @@
 import React from 'react';
 import './contact.scss';
 
-export const Contact = () => {
+type ContactProps = {
+    contactRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Contact: React.FC<ContactProps> = ({contactRef}) => {
     return (
-        <section className="contact">
+        <section ref={contactRef} className="contact">
             <div className="contact__title title">
                 <h2>Contact</h2>
             </div>
@@ -42,10 +46,12 @@ export const Contact = () => {
                     <div className="contact__author">Postma Elena</div>
                     <div className="contact__socials">
                         <div className="contact__item">
-                            <img src="#" alt="facebook"/>
+                            f
+                            {/*<img src="#" alt="facebook"/>*/}
                         </div>
                         <div className="contact__item">
-                            <img src="#" alt="linkedin"/>
+                            in
+                            {/*<img src="#" alt="linkedin"/>*/}
                         </div>
                     </div>
                     <div className="contact__mail">

@@ -4,9 +4,13 @@ import './home.scss';
 import logo from '../../assets/images/main/Layer 33 copy 2@1X.png';
 import bg from '../../assets/images/main/BG-Header@1X.jpeg';
 
-export const Home = () => {
+type HomeProps = {
+    homeRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Home: React.FC<HomeProps> = ({homeRef}) => {
     return (
-        <section className="home">
+        <section ref={homeRef} className="home">
 
             <img src={bg} className="home__background"/>
 

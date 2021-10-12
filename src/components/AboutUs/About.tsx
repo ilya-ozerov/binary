@@ -4,9 +4,13 @@ import webImage from "../../assets/images/about/01.png";
 import iosAndroidImage from "../../assets/images/about/02.png";
 import marketingImage from "../../assets/images/about/03.png";
 
-export const About = () => {
+type AboutProps = {
+    aboutRef: React.RefObject<HTMLDivElement>;
+}
+
+export const About: React.FC<AboutProps> = ({aboutRef}) => {
     return (
-        <section className="about">
+        <section ref={aboutRef} className="about">
             <div className="about__title title">
                 <h2>about</h2>
             </div>

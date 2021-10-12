@@ -1,9 +1,13 @@
 import React from 'react';
 import './portfolio.scss';
 
-export const Portfolio = () => {
+type PortfolioProps = {
+    portfolioRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Portfolio: React.FC<PortfolioProps> = ({portfolioRef}) => {
     return (
-        <section className="portfolio">
+        <section ref={portfolioRef} className="portfolio">
             <div className="portfolio__title title">
                 <h2>Portfolio</h2>
             </div>

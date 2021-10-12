@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './App.scss';
 
 import logo from './assets/images/main/Layer 33 copy 2@1X.png';
@@ -15,20 +15,27 @@ import {Contact} from "./components/Contact/Contact";
 import {Footer} from "./components/Footer/Footer";
 
 export const App = () => {
+
+    const homeRef = useRef<HTMLDivElement>(null);
+    const aboutRef = useRef<HTMLDivElement>(null);
+    const portfolioRef = useRef<HTMLDivElement>(null);
+    const contactRef = useRef<HTMLDivElement>(null);
+
     return (
         <div className="wrapper">
 
-            <Home />
+            <Home homeRef={homeRef} />
 
-            <Navbar />
+            <Navbar contactRef={contactRef} homeRef={homeRef}
+                    portfolioRef={portfolioRef} aboutRef={aboutRef} />
 
-            <About />
+            <About aboutRef={aboutRef} />
 
-            <Portfolio />
+            <Portfolio portfolioRef={portfolioRef} />
 
             <Partners />
 
-            <Contact />
+            <Contact contactRef={contactRef} />
 
             <Footer />
 
