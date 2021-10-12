@@ -2,7 +2,15 @@ import React from 'react';
 import './footer.scss';
 import logo from "../../assets/images/main/Layer 33 copy 2@1X.png";
 
-export const Footer = () => {
+type FooterProps = {
+    homeRef: React.RefObject<HTMLDivElement>;
+    contactRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Footer: React.FC<FooterProps> = ({homeRef, contactRef}) => {
+
+    const scrollTo = (el: React.RefObject<HTMLDivElement>) => {el.current?.scrollIntoView({behavior: "smooth"}); }
+
     return (
         <footer className="footer">
             <div className="footer__logo">
@@ -11,10 +19,10 @@ export const Footer = () => {
 
             <div className="footer__menu">
                 <ul className="footer__list">
-                    <li>Home</li>
+                    <li onClick={() => scrollTo(homeRef)}>Home</li>
                     <li>Facebook</li>
                     <li>Linkedin</li>
-                    <li>Contact</li>
+                    <li onClick={() => scrollTo(contactRef)}>Contact</li>
                 </ul>
             </div>
 
