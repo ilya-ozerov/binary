@@ -23,6 +23,15 @@
     display: flex;
     li {
       margin-right: 30px;
+      cursor: pointer;
+      user-select: none;
+
+      transition-duration: 0.5s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+
       &:last-child {
         margin-right: 0;
       }

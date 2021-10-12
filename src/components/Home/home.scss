@@ -71,6 +71,9 @@
     //background-color: antiquewhite;
 
     button {
+
+      transition-duration: 0.5s;
+
       &:after {
         content: '';
         position: absolute;
@@ -81,7 +84,33 @@
         background: url("../../assets/images/main/Arrow-down.svg") center no-repeat;
         margin: 0px 0px 0px -8.5px;
       }
+      &:hover {
+        box-shadow: 0px 0px 10px #EAEAEA;
+        &:after {
+          animation: button linear 1.3s infinite;
+        }
+      }
+
+      &:active {
+        background-color: rgba(255, 255,255, 0.2);
+      }
     }
 
+
+
+  }
+}
+
+@keyframes button {
+  0% {
+    transform: translate(0px);
+  }
+
+  50% {
+    transform: translate(0px, -10px);
+  }
+
+  100% {
+    transform: translate(0px, -0px);
   }
 }

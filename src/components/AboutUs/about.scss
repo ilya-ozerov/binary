@@ -1,6 +1,6 @@
 .about {
 
-  padding: 40px;
+  padding: 70px 40px 40px 40px;
 
   min-height: 50vh;
 
@@ -31,8 +31,6 @@
     gap: 40px;
   }
   &__column {
-    //background-color: aqua;
-    //max-width: 200px;
   }
 }
 
@@ -40,7 +38,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   &__image {
     width: 92px;
     height: 92px;
